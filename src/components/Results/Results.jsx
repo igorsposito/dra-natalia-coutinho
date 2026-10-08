@@ -9,6 +9,11 @@ const resultsPairs = [
   { id: 1, before: '/images/results/1.jpg', after: '/images/results/2.jpg' },
   { id: 2, before: '/images/results/3.jpg', after: '/images/results/4.jpg' },
   { id: 3, before: '/images/results/5.jpg', after: '/images/results/6.jpg' },
+  { id: 4, before: '/images/results/7.jpg', after: '/images/results/8.jpg' },
+  { id: 5, before: '/images/results/9.jpg', after: '/images/results/10.jpg' },
+  { id: 6, before: '/images/results/11.jpg', after: '/images/results/12.jpg' },
+  { id: 7, before: '/images/results/13.jpg', after: '/images/results/14.jpg' },
+  { id: 8, before: '/images/results/15.jpg', after: '/images/results/16.jpg' },
 ];
 
 export default function Results() {
