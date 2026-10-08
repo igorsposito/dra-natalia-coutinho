@@ -1,0 +1,355 @@
+.contact {
+  position: relative;
+  padding: 7rem 1.5rem;
+  background-color: #F4F2EC;
+  border-top: 10px solid #E2DEC9;
+  border-bottom: 1px solid #E2DEC9;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+}
+
+.sectionTag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-gold, #C6984A);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.title {
+  font-size: 3.5rem;
+  color:#525942 ;
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary, #555555);
+  line-height: 1.3;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: stretch;
+  margin-bottom: 4rem;
+}
+
+/* Card da Foto & Frase + Instagram */
+.infoCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2DEC9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Foto MAIOR da médica */
+.doctorImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 440px; 
+}
+
+.doctorImg {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(20, 28, 19, 0.85) 100%);
+}
+
+.doctorBadge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctorBadge strong {
+  font-size: 1.35rem;
+  font-family: var(--font-poppins), sans-serif !important;
+}
+
+.doctorBadge span {
+  font-size: 0.9rem;
+  color: var(--accent-gold, #E6C694);
+  font-weight: 600;
+}
+
+.infoList {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #FAF9F6;
+}
+
+.quoteText {
+  font-size: 0.95rem;
+  color: #444444;
+  line-height: 1.65;
+  font-style: italic;
+  margin: 0;
+}
+
+.instagramLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-green-dark, #525942);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.instagramLink:hover {
+  color: var(--accent-gold, #C6984A);
+  transform: translateX(3px);
+}
+
+/* Card do Formulário */
+.formCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2DEC9;
+  border-radius: var(--radius-md);
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formTitle {
+  font-size: 1.75rem;
+  color: var(--text-primary, #1A1A1A);
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 0.35rem;
+}
+
+.formSubtitle {
+  font-size: 0.92rem;
+  color: var(--text-secondary, #555555);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary, #1A1A1A);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #D8D2BC;
+  border-radius: var(--radius-sm);
+  background-color: #FAF9F6;
+  font-size: 0.95rem;
+  color: #1A1A1A;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary-green, #6C7458);
+  box-shadow: 0 0 0 3px rgba(108, 116, 88, 0.15);
+}
+
+.submitBtn {
+  background-color: var(--primary-green, #6C7458);
+  color: #FFFFFF;
+  border: none;
+  padding: 1.1rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-green-dark, #525942);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(108, 116, 88, 0.3);
+}
+
+/* Mensagem de Agradecimento */
+.thankYouBox {
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.successIcon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-green, #6C7458);
+  color: #FFFFFF;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(108, 116, 88, 0.3);
+}
+
+.thankYouBox h3 {
+  font-size: 1.8rem;
+  font-family: var(--font-poppins), sans-serif !important;
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.75rem;
+}
+
+.thankYouBox p {
+  font-size: 1rem;
+  color: var(--text-secondary, #555555);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 420px;
+}
+
+.resetBtn {
+  background: transparent;
+  border: 1px solid var(--primary-green, #6C7458);
+  color: var(--primary-green, #6C7458);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resetBtn:hover {
+  background-color: var(--primary-green, #6C7458);
+  color: #FFFFFF;
+}
+
+/* Seção do Mapa do Google */
+.mapContainer {
+  background-color: #FFFFFF;
+  border: 1px solid #E2DEC9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
+}
+
+.mapHeader {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #E2DEC9;
+  background-color: #FAF9F6;
+}
+
+.mapPinIcon {
+  font-size: 1.5rem;
+  background: #F4F2EC;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E2DEC9;
+}
+
+.mapHeader h3 {
+  font-size: 1.15rem;
+  color: var(--text-primary, #1A1A1A);
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 0.1rem;
+}
+
+.mapHeader p {
+  font-size: 0.92rem;
+  color: var(--text-secondary, #555555);
+  margin: 0;
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 250px;
+}
+
+@media (max-width: 992px) {
+
+  .contact {
+    padding: 4.5rem 1.5rem;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .doctorImageWrapper {
+    height: 380px;
+  }
+
+  .formCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+}

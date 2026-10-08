@@ -1,0 +1,26 @@
+:root {
+  /* Paleta Oficial - Dra. Natália Coutinho */
+  --primary-green: #8F9779;          /* Verde Oliva oficial da marca */
+  --primary-green-dark: #6C7458;     /* Variação mais escura para hover */
+  --primary-green-light: #F2F4EF;    /* Fundo suave para cards e seções */
+
+  --accent-gold: #E6C694;            /* Dourado / Areia oficial */
+  --accent-gold-hover: #D4B27D;      /* Hover do dourado */
+
+  /* Neutros e Backgrounds */
+  --bg-main: #FAF9F6;                /* Off-white levemente aquecido */
+  --bg-card: #FFFFFF;                /* Branco puro */
+  --text-primary: #1F241E;           /* Grafite verde-escuro para leitura */
+  --text-secondary: #5A6058;         /* Cinza suave para descrições */
+  --border-color: #D9D9D9;           /* Borda oficial */
+
+  /* Tipografia Sem Serifa & Cursiva */
+  --font-heading: var(--font-poppins), sans-serif;
+  --font-cursive: var(--font-dancing), cursive;
+  --font-body: var(--font-inter), sans-serif;
+  
+  --max-width: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}

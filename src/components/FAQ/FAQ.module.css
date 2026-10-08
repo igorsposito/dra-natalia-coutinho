@@ -1,0 +1,159 @@
+.faqSection {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background-color: #FFFFFF;
+  border-top: 10px solid #E2DEC9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr; 
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.imageCol {
+  position: sticky;
+  top: 100px; 
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E2DEC9;
+}
+
+.faqImage {
+  object-fit: cover;
+  object-position: center 1%;
+}
+
+.contentCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--accent-gold, #C6984A);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.title {
+  font-size: 3.2rem;
+  color:#6C7458 ;
+  font-family: var(--font-poppins), sans-serif !important;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItem {
+  border-bottom: 1px solid #EAE6D8;
+}
+
+.questionBtn {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.questionText {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary, #1A1A1A);
+  font-family: var(--font-poppins), sans-serif !important;
+}
+
+.questionBtn:hover .questionText {
+  color: var(--primary-green, #6C7458);
+}
+
+.arrowIcon {
+  color: #777777;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+  color: var(--primary-green, #6C7458);
+}
+
+.answerWrapper {
+  overflow: hidden;
+}
+
+.answerText {
+  padding-bottom: 1.25rem;
+  font-size: 0.92rem;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageCol {
+    position: relative;
+    top: 0;
+  }
+
+  .imageWrapper {
+    height: 380px;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .faqSection {
+    padding: 4rem 1.25rem;
+  }
+
+  .imageWrapper {
+    height: 280px;
+  }
+
+  .questionText {
+    font-size: 0.95rem;
+  }
+}

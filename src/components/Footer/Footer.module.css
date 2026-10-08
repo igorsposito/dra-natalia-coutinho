@@ -1,0 +1,193 @@
+.footer {
+  background-color: #1A2119;
+  color: #E2DEC9;
+  padding: 5rem 1.5rem 2rem 1.5rem;
+  border-top: 1px solid rgba(226, 222, 201, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 4rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(226, 222, 201, 0.1);
+}
+
+/* Coluna 1: Logo + Descrição + Insta */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logoLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover {
+  opacity: 0.85;
+}
+
+.brandLogo {
+width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.brandDesc {
+  font-size: 0.9rem;
+  color: #A3A89E;
+  line-height: 1.65;
+  max-width: 360px;
+  margin-bottom: 1.25rem;
+}
+
+.socialWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-gold, #C6984A);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Coluna 2: Links Navegação */
+.colTitle {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 1.25rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.navList a {
+  color: #A3A89E;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.navList a:hover {
+  color: var(--accent-gold, #C6984A);
+  transform: translateX(3px);
+}
+
+/* Coluna 3: Endereço + CRM */
+.address {
+  font-size: 0.9rem;
+  color: #A3A89E;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contactInfo {
+  font-size: 0.9rem;
+  color: #A3A89E;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.contactInfo strong {
+  color: #FFFFFF;
+}
+
+.crmBadge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-gold, #C6984A);
+  border: 1px solid rgba(198, 152, 74, 0.4);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  background-color: rgba(198, 152, 74, 0.05);
+}
+
+/* Barra Inferior */
+.bottomBar {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #7A8075;
+}
+
+.developerCol {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.devText {
+  font-size: 0.78rem;
+  color: #7A8075;
+}
+
+.agaveLink {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.agaveLink:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.agaveLogo {
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .topRow {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  .developerCol {
+    justify-content: center;
+  }
+  .navCol {
+    display: none;
+  }
+
+  .footer {
+  padding: 3rem 3rem 2rem 2rem;
+ }
+
+}

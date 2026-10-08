@@ -1,0 +1,87 @@
+.crossedWrapper {
+  position: relative;
+  width: 100%;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F2EC 100%);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.85rem 0;
+  white-space: nowrap;
+}
+
+.straightBanner {
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-green-dark, #525942);
+  color: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+.diagonalBanner {
+  position: absolute;
+  width: 112vw; 
+  background-color: var(--primary-green, #8F9779);
+  color: #FFFFFF;
+  transform: rotate(-2.5deg);
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.diamond {
+  font-size: 0.5rem;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .crossedWrapper {
+    padding: 0.1rem 0; 
+  }
+
+  .banner {
+    padding: 0.75rem 0; 
+  }
+
+  .straightBanner {
+    width: 100vw;
+  }
+
+  .diagonalBanner {
+    width: 130vw;
+    padding: 0.55rem 0;
+    transform: rotate(-7.8deg);
+  }
+
+  .item {
+    font-size: 0.42rem; 
+    gap: 0.8rem; 
+  }
+
+  .content {
+    gap: 0.5rem;
+  }
+}
