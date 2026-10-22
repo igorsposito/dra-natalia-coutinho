@@ -1,0 +1,316 @@
+.section {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background-color: #F4F3ED; /* Bege ultra leve */
+  border-top: 10px solid #E2DEC9;
+  overflow: hidden;
+}
+
+/* Vetor de Fios de Cabelo em Fundo */
+.hairBackgroundVector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  animation: floatHair 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatHair {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  100% {
+    transform: translateY(-15px) scale(1.02);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.tag {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #C6984A; /* Dourado da marca */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #6C7458; /* Verde sálvia oficial */
+  font-family: var(--font-poppins), sans-serif !important;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Grid das Etapas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.card3d {
+  background: #FFFFFF;
+  border: 1px solid #E2DEC9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(108, 116, 88, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card3d:hover {
+  transform: translateY(-6px);
+  border-color: #6C7458;
+  box-shadow: 0 15px 35px rgba(108, 116, 88, 0.12);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card3d:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(108, 116, 88, 0.3) 100%);
+}
+
+.stepNumber {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #6C7458;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBadge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6C7458;
+  background: #FFFFFF;
+  padding: 4px 12px;
+  border-radius: 30px;
+  border: 1px solid #E2DEC9;
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  font-size: 0.92rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Card de Investimento / Preço */
+.heroBanner {
+  position: relative;
+  background: #6C7458; /* Verde sálvia oficial */
+  border-radius: 24px;
+  padding: 3rem;
+  color: #FFFFFF;
+  box-shadow: 0 15px 35px rgba(108, 116, 88, 0.18);
+  border: 1px solid #E2DEC9;
+}
+
+.bannerContent {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.bannerBadge {
+  display: inline-block;
+  color: #E2DEC9;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.bannerTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: var(--font-poppins), sans-serif !important;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.bannerSub {
+  font-size: 1rem;
+  color: #EAE6D8;
+  margin-bottom: 1.5rem;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #FFFFFF;
+}
+
+.checkIcon {
+  color: #C6984A;
+  font-weight: bold;
+}
+
+/* Card Branco Interno para Destaque de Preço */
+.bannerPriceCard {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 2rem;
+  text-align: center;
+  color: #1A1A1A;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.priceLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777777;
+  font-weight: 600;
+}
+
+/* Preço 100% Amarelinho / Dourado (#C6984A) */
+.priceValue {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #C6984A;
+  margin: 0.5rem 0;
+  line-height: 1;
+  font-family: var(--font-poppins), sans-serif !important;
+}
+
+.currency {
+  font-size: 1.5rem;
+  color: #C6984A;
+}
+
+.cents {
+  font-size: 1.5rem;
+  color: #C6984A;
+}
+
+.paymentInfo {
+  font-size: 0.88rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.paymentInfo strong {
+  color: #1A1A1A;
+}
+
+/* Botão com Hover Amarelinho / Dourado */
+.ctaButton3d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #6C7458;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton3d:hover {
+  background: #C6984A; /* Transiciona para amarelo/dourado no hover */
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(198, 152, 74, 0.35);
+}
+
+@media (max-width: 992px) {
+  .bannerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .heroBanner {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .priceValue {
+    font-size: 2.5rem;
+  }
+}

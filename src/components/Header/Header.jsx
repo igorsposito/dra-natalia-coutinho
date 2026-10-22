@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
 
   const whatsappUrl = `https://wa.me/5533991124719?text=${encodeURIComponent(
-    'Olá, Dra. Natália! Gostaria de agendar uma consulta.'
+    'Olá, Dra. Natália! Vi os resultados no site e gostaria de agendar uma avaliação para o meu caso.'
   )}`;
 
   return (

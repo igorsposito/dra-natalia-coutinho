@@ -5,6 +5,7 @@ import Marquee from '../components/Marquee/Marquee';
 import styles from './page.module.css';
 import Treatments from '../components/Treatments/Treatments';
 import Results from '../components/Results/Results';
+import ConsultationSteps from '../components/ConsultationSteps/ConsultationSteps';
 import FAQ from '../components/FAQ/FAQ';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
@@ -19,6 +20,7 @@ export default function Home() {
       <Marquee />
       <Treatments />
       <Results />
+      <ConsultationSteps />
       <FAQ />
       <Contact />
       <Footer />

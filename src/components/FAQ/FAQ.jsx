@@ -11,24 +11,24 @@ const faqData = [
     answer: 'Não precisa ter medo do desconforto. Aqui na clínica oferecemos a sedação consciente (óxido nitroso/gás do riso), permitindo que você realize procedimentos como MMP® e microagulhamento de forma totalmente relaxada e sem dor.',
   },
   {
-    question: 'Lavar o cabelo todos os dias faz mal ou apodrece os fios?',
-    answer: 'Isso é um mito popular! Lavar diariamente não apodrece a raiz. Na verdade, para quem tem o couro cabeludo muito oleoso, a lavagem diária é necessária para evitar o acúmulo de sebo, caspa, coceira e queda.',
-  },
-  {
-    question: 'Tenho descamação, coceira e suspeita de psoríase. É possível tratar?',
-    answer: 'Sim! Psoríase e dermatites no couro cabeludo têm tratamento e controle eficaz. Através da Tricoscopia Digital, identificamos a causa da inflamação ativa para estancar a coceira e controlar a descamação.',
-  },
-  {
     question: 'Como funciona a primeira consulta de Tricologia?',
-    answer: 'A consulta inicial é minuciosa. Realizamos anamnese completa, exames de sangue e a Tricoscopia Digital, exame de alta precisão que analisa os folículos em tempo real para estruturar o seu protocolo exclusivo.',
+    answer: 'É uma avaliação completa e minuciosa. Realizamos anamnese detalhada, exame de Tricoscopia Digital do couro cabeludo, explicação clara da causa do seu problema e a montagem do seu protocolo personalizado com prescrição sob medida.',
   },
   {
-    question: 'A clínica aceita convênios médicos para consultas?',
-    answer: 'Os atendimentos são exclusivamente particulares para garantir a atenção necessária a cada caso. No entanto, emitimos nota fiscal médica detalhada para que você possa solicitar reembolso no seu plano.',
+    question: 'Tenho descamação, coceira e suspeita de alopecia. É possível tratar?',
+    answer: 'Sim! Tratamos todos os tipos de alopecias e afecções do couro cabeludo (como dermatite e psoríase). Através da Tricoscopia Digital, identificamos a causa exata da inflamação para estancar os sintomas e recuperar a saúde dos fios.',
+  },
+  {
+    question: 'A consulta dá direito a retorno?',
+    answer: 'Sim! A consulta inclui um retorno garantido em até 90 dias para reavaliar a evolução do seu tratamento e fazer os ajustes necessários no seu protocolo.',
+  },
+  {
+    question: 'A clínica aceita convênios para consultas e procedimentos?',
+    answer: 'Os atendimentos são exclusivamente particulares para garantir uma consulta dedicada, personalizada e sem pressa. Disponibilizamos recibo e documentação necessária caso você deseje solicitar reembolso no seu plano.',
   },
   {
     question: 'Em quanto tempo começo a notar os resultados?',
-    answer: 'A redução da queda é percebida nas primeiras sessões (30 a 60 dias). O ganho de densidade e o nascimento de novos fios ficam mais evidentes a partir do 3º mês de protocolo contínuo.',
+    answer: 'A redução da queda e a melhora na saúde do couro cabeludo costumam ser percebidas nas primeiras semanas. O ganho de densidade e o nascimento de novos fios ficam mais evidentes a partir do 3º mês de protocolo contínuo.',
   },
 ];
 
@@ -72,7 +72,7 @@ export default function FAQ() {
           <div className={styles.header}>
             <h2 className={styles.title}>Dúvidas Frequentes</h2>
             <p className={styles.subtitle}>
-              Esclareça suas principais dúvidas sobre diagnósticos, procedimentos sem dor e cuidados diários com a saúde capilar.
+              Esclareça suas principais dúvidas sobre diagnósticos, procedimentos sem dor e cuidados com a sua saúde capilar.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 .faqSection {
   position: relative;
   padding: 6rem 1.5rem;
-  background-color: #FFFFFF;
+  background-color: #6C7458; /* Verde sálvia oficial para dar o contraste */
   border-top: 10px solid #E2DEC9;
 }
 
@@ -25,7 +25,7 @@
   height: 580px;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border: 1px solid #E2DEC9;
 }
 
@@ -46,7 +46,7 @@
 .tag {
   font-size: 0.78rem;
   font-weight: 800;
-  color: var(--accent-gold, #C6984A);
+  color: #E2DEC9; /* Bege da marca */
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -55,7 +55,7 @@
 
 .title {
   font-size: 3.2rem;
-  color:#6C7458 ;
+  color: #FFFFFF; /* Texto branco no fundo verde */
   font-family: var(--font-poppins), sans-serif !important;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -63,7 +63,7 @@
 
 .subtitle {
   font-size: 1.2rem;
-  color: #666666;
+  color: #EAE6D8; /* Bege suave para leitura */
   line-height: 1.6;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .accordionItem {
-  border-bottom: 1px solid #EAE6D8;
+  border-bottom: 1px solid rgba(226, 222, 201, 0.3);
 }
 
 .questionBtn {
@@ -93,23 +93,23 @@
 .questionText {
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-primary, #1A1A1A);
+  color: #FFFFFF;
   font-family: var(--font-poppins), sans-serif !important;
 }
 
 .questionBtn:hover .questionText {
-  color: var(--primary-green, #6C7458);
+  color: #E2DEC9;
 }
 
 .arrowIcon {
-  color: #777777;
+  color: #E2DEC9;
   flex-shrink: 0;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .arrowRotate {
   transform: rotate(180deg);
-  color: var(--primary-green, #6C7458);
+  color: #C6984A; /* Dourado no destaque da seta */
 }
 
 .answerWrapper {
@@ -119,7 +119,7 @@
 .answerText {
   padding-bottom: 1.25rem;
   font-size: 0.92rem;
-  color: #555555;
+  color: #F4F3ED;
   line-height: 1.7;
   margin: 0;
 }
