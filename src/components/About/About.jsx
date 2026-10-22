@@ -58,7 +58,7 @@ export default function About() {
           <div className={styles.experienceBadge}>
             <div className={styles.badgePulse} />
             <strong>Acompanhamento</strong>
-            <span>Médico Exclusivo | CRF-MG: 35177</span>
+            <span>CRF-MG: 35177</span>
           </div>
         </motion.div>
 
