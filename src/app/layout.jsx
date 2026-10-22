@@ -75,3 +75,38 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'MedicalBusiness',
+      name: 'Dra. Natália Coutinho - Tricologista',
+      image: 'https://dranataliacoutinho.com.br/og-image.jpg',
+      '@id': 'https://dranataliacoutinho.com.br',
+      url: 'https://dranataliacoutinho.com.br',
+      telephone: '+5533991124719',
+      priceRange: '$$$',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'R. Luís Ensch, 424 - Vila Mariana',
+        addressLocality: 'Governador Valadares',
+        addressRegion: 'MG',
+        postalCode: '35057-680',
+        addressCountry: 'BR',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: -18.850000,
+        longitude: -41.950000,
+      },
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '18:00',
+      },
+    }),
+  }}
+/>
