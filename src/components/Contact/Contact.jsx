@@ -66,7 +66,7 @@ export default function Contact() {
               <div className={styles.imageOverlay} />
               <div className={styles.doctorBadge}>
                 <strong>Dra. Natália Coutinho</strong>
-                <span>Tricologia Médica & Saúde Capilar</span>
+                <span>Tricologia & Saúde Capilar | CRF-MG: 35177 </span>
               </div>
             </div>
 

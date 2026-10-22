@@ -33,11 +33,11 @@ export default function Hero() {
           </div>
 
           <h1 className={styles.title}>
-            A excelência médica que transforma a sua <span className="scriptText">saúde capilar.</span>
+            A excelência da tricologia para transformar a sua <span className="scriptText">saúde capilar.</span>
           </h1>
 
           <p className={styles.subtitle}>
-            Tratamentos capilares avançados, prevenção e combate à queda de cabelo com acompanhamento médico especializado.
+            Acompanhamento tricológico especializado no diagnóstico e tratamento integral de todas as alopecias e patologias do couro cabeludo.
           </p>
 
           <a 
@@ -53,7 +53,7 @@ export default function Hero() {
           </a>
 
           <p className={styles.locationInfo}>
-            📍 Atendimentos em Clínica Própria
+           📍 Atendimentos em Clínica Própria | CRF-MG: 35177
           </p>
         </div>
       </div>

@@ -66,7 +66,7 @@ export default function Footer() {
               <strong>WhatsApp:</strong> (33) 99112-4719
             </p>
             <div className={styles.crmBadge}>
-              CRM-MG | Tricologia Médica
+             CRF-MG: 35177 
             </div>
           </div>
         </div>

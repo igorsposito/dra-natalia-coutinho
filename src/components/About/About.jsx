@@ -58,7 +58,7 @@ export default function About() {
           <div className={styles.experienceBadge}>
             <div className={styles.badgePulse} />
             <strong>Acompanhamento</strong>
-            <span>Médico Exclusivo</span>
+            <span>Médico Exclusivo | CRF-MG: 35177</span>
           </div>
         </motion.div>
 
@@ -74,7 +74,7 @@ export default function About() {
             Dra. Natália Coutinho
           </h2>
           <p className={styles.subtitle}>
-            Médica especialista dedicada à saúde capilar, prevenção e restauração da autoestima.
+            Farmacêutica especialista em tricologia, dedicada à saúde capilar, diagnósticos precisos e restauração da autoestima.
           </p>
 
           <p className={styles.description}>

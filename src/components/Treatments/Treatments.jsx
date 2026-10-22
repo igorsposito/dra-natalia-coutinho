@@ -95,7 +95,7 @@ export default function Treatments() {
          
           <h2 className={styles.title}>Tratamentos & Protocolos</h2>
           <p className={styles.subtitle}>
-            Conheça as soluções médicas de alta precisão para a restauração e saúde do seu cabelo.
+            Conheça os tratamentos e protocolos avançados de alta precisão para a restauração e saúde do seu cabelo.
           </p>
         </motion.div>
 
