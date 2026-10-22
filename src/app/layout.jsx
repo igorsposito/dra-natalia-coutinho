@@ -20,32 +20,31 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const baseUrl = process.env.VERCEL_URL 
-  ? `https://${process.env.VERCEL_URL}` 
-  : 'https://dranataliacoutinho.com.br';
+const siteUrl = 'https://dranataliacoutinho.com.br';
 
 export const metadata = {
-  metadataBase: new URL(baseUrl),
-  title: 'Dra. Natália Coutinho | Tricologista & Saúde Capilar',
-  description: 'Tratamentos especializados para queda de cabelo, calvície e saúde do couro cabeludo com acompanhamento médico especializado.',
+  metadataBase: new URL(siteUrl),
+  title: 'Dra. Natália Coutinho | Farmacêutica Esteta & Tricologista',
+  description: 'Tratamentos avançados e personalizados para queda de cabelo, alopecias e saúde do couro cabeludo.',
   keywords: [
     'Tricologia',
     'Saúde Capilar',
     'Queda de Cabelo',
     'Tratamento Capilar',
-    'Calvície',
+    'Alopecias',
     'Dra Natália Coutinho',
-    'Tricologista'
+    'Tricologista Governador Valadares'
   ],
   authors: [{ name: 'Dra. Natália Coutinho' }],
   creator: 'Dra. Natália Coutinho',
   openGraph: {
-    title: 'Dra. Natália Coutinho | Tricologista & Saúde Capilar',
-    description: 'Tratamentos especializados para queda de cabelo, calvície e saúde do couro cabeludo.',
+    title: 'Dra. Natália Coutinho | Farmacêutica Esteta & Tricologista',
+    description: 'Tratamentos avançados e personalizados para queda de cabelo, alopecias e saúde do couro cabeludo.',
+    url: siteUrl,
     siteName: 'Dra. Natália Coutinho - Tricologia',
     images: [
       {
-        url: '/og-image.jpg',
+        url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'Dra. Natália Coutinho - Tricologista e Saúde Capilar',
@@ -56,9 +55,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dra. Natália Coutinho | Tricologista & Saúde Capilar',
-    description: 'Tratamentos especializados para queda de cabelo, calvície e saúde do couro cabeludo.',
-    images: ['/og-image.jpg'],
+    title: 'Dra. Natália Coutinho | Farmacêutica Esteta & Tricologista',
+    description: 'Tratamentos avançados para queda de cabelo, alopecias e saúde do couro cabeludo.',
+    images: [`${siteUrl}/og-image.jpg`],
   },
   robots: {
     index: true,
