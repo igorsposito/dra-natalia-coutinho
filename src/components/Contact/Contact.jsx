@@ -72,7 +72,7 @@ export default function Contact() {
 
             <div className={styles.infoList}>
               <p className={styles.quoteText}>
-                "Cuidar do seu cabelo é cuidar da sua identidade e autoestima. Aguardo você para iniciarmos essa jornada juntos."
+                &quot;Cuidar do seu cabelo é cuidar da sua identidade e autoestima. Aguardo você para iniciarmos essa jornada juntos.&quot;
               </p>
 
               <a 
