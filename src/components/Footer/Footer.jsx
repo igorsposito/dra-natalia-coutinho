@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </a>
             <p className={styles.brandDesc}>
-              Atendimento médico especializado, diagnóstico preciso e tratamentos avançados para a saúde e restauração dos seus cabelos.
+              Atendimento especializado, diagnóstico preciso e tratamentos avançados para a saúde e restauração dos seus cabelos.
             </p>
             <div className={styles.socialWrapper}>
               <a 
@@ -47,7 +47,7 @@ export default function Footer() {
           <div className={styles.navCol}>
             <h4 className={styles.colTitle}>Navegação</h4>
             <ul className={styles.navList}>
-              <li><a href="#about">Sobre a Médica</a></li>
+              <li><a href="#about">Sobre a Dra. Natália</a></li>
               <li><a href="#treatments">Tratamentos</a></li>
               <li><a href="#results">Resultados</a></li>
               <li><a href="#faq">Perguntas Frequentes</a></li>

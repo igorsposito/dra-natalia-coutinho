@@ -5,7 +5,7 @@ import styles from './Marquee.module.css';
 export default function Marquee() {
   const itemsBand1 = [
     'DRA. NATÁLIA COUTINHO',
-    'TRICOLOGIA MÉDICA',
+    'TRICOLOGIA',
     'SAÚDE CAPILAR',
     'DIAGNÓSTICO PRECISO',
     'TRATAMENTOS AVANÇADOS',
@@ -13,7 +13,7 @@ export default function Marquee() {
   ];
 
   const itemsBand2 = [
-    'EXCELÊNCIA MÉDICA',
+    'SAÚDE CAPILAR',
     'PROTOCOLOS PERSONALIZADOS',
     'TECNOLOGIA DE PONTA',
     'RESTAURAÇÃO CAPILAR',
